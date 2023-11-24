@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url(reset.css);
+
+:root {
+    --back-plano: hsl(225, 100%, 98%);
+    --sec: hsl(224, 23%, 55%);
+    --pay-buttom: hsl(245, 75%, 52%);
+    --pri: hsl(223, 47%, 23%);
+    --back: hsl(225, 100%, 94%);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--back);
+    font-size: 1em;
+    font-family: 'Red hat display'; /* 500 700 900 */
+}
+
+main {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.imagem {
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10%;
+    gap: 1.5em;
+}
+
+.principal__titulo {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--pri);
+}
+
+.principal__texto {
+    color: var(--sec);
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.principal__plano {
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--back-plano);
+    width: 100%;
+    padding: 7.5% 5%;
+}
+
+
+
+
+
