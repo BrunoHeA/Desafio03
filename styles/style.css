@@ -5,6 +5,7 @@
     --back-plano: hsl(225, 100%, 98%);
     --sec: hsl(224, 23%, 55%);
     --pay-buttom: hsl(245, 75%, 52%);
+    --pay-buttom-hover: hsl(245, 59%, 64%);
     --pri: hsl(223, 47%, 23%);
     --back: hsl(225, 100%, 94%);
 }
@@ -35,8 +36,11 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 10%;
+    padding: 10% 15%;
     gap: 1.5em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    box-shadow: 0 1em 1em rgba(56, 41, 224, .1);
 }
 
 .principal__titulo {
@@ -59,8 +63,91 @@ main {
     background-color: var(--back-plano);
     width: 100%;
     padding: 7.5% 5%;
+    gap: 1em;
 }
 
+.principal__plano__anual {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.principal__plano__anual__titulo {
+    font-weight: 900;
+    color: var(--pri);
+}
+
+.principal__plano__anual__preco {
+    color: var(--sec);
+}
+
+.principal__plano__change {
+    padding-left: 20%;
+    color: var(--pay-buttom);
+    font-weight: 900;
+}
+
+.principal__plano__change:hover {
+    text-decoration: none;
+    color: var(--pay-buttom-hover);
+}
+
+.principal__proceed {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--pay-buttom);
+    border-radius: .7em;
+    background-color: var(--pay-buttom);
+    padding: 5%;
+    box-shadow: 0 1em 1em rgba(56, 41, 224, .2);
+}
+
+.principal__proceed:hover {
+    background-color: var(--pay-buttom-hover);
+    border-color: var(--pay-buttom-hover);
+}
+
+.principal__cancel {
+    text-decoration: none;
+    color: var(--sec);
+    font-weight: 700;
+}
+
+.principal__cancel:hover {
+    color: var(--pri);
+    font-weight: 900;
+}
+
+footer {
+    height: 2vh;
+    text-align: center;
+}
+
+.footer__buttom {
+    color: var(--pay-buttom);
+}
+
+.footer__buttom:hover {
+    color: var(--pay-buttom-hover);
+}
+
+@media screen and (max-width : 1000px) {
+    main {
+        width: 90%;
+    }
+
+    .principal {
+        padding: 10% 10%;
+    }
+
+    .principal__plano__change {
+        padding-left: 10%;
+        color: var(--pay-buttom);
+        font-weight: 900;
+    }
+}
 
 
 
